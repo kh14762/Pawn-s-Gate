@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3ffgvrnph5ki"]
+
+[ext_resource type="Script" path="res://src/board/Cell.cs" id="1_m18yo"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mdhpm"]
+size = Vector2(1, 1)
+
+[node name="Cell" type="Node3D"]
+script = ExtResource("1_m18yo")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_mdhpm")

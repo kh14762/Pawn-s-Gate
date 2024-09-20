@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://b8tbqxyj4od8s"]
+
+[ext_resource type="Script" path="res://src/Main.cs" id="1_ew1oa"]
+[ext_resource type="PackedScene" uid="uid://8agu4ogopqaf" path="res://assets/Jay.blend" id="2_xwbhb"]
+[ext_resource type="PackedScene" uid="uid://bmbj3ldksidrn" path="res://assets/King.blend" id="3_6050b"]
+[ext_resource type="PackedScene" uid="uid://des0tqbib12hq" path="res://assets/Pawn.blend" id="4_50pw5"]
+[ext_resource type="PackedScene" uid="uid://ccbad3dnhr5dm" path="res://assets/Printer.blend" id="5_e7l0a"]
+[ext_resource type="PackedScene" uid="uid://dnf3umkp5fa5q" path="res://scenes/board/board.tscn" id="6_7a10v"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_ew1oa")
+
+[node name="Jay" parent="." instance=ExtResource("2_xwbhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.565579, 1.87643, 2.4888)
+
+[node name="King" parent="." instance=ExtResource("3_6050b")]
+transform = Transform3D(0.996528, 0, -0.0832604, 0, 1, 0, 0.0832604, 0, 0.996528, 0.510063, 0, 4.44197)
+
+[node name="Pawn" parent="." instance=ExtResource("4_50pw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50077, 0, 4.50201)
+
+[node name="Printer" parent="." instance=ExtResource("5_e7l0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.518584, 0, 0.505548)
+
+[node name="Board" parent="." instance=ExtResource("6_7a10v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.100449, 0.734205, -0.671456, -8.26453e-09, 0.674869, 0.737938, 0.994942, -0.0741251, 0.0677899, -2.06101, 4.66923, 2.48245)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0159342, 0.999873, 0, -0.999873, 0.0159342, 0, 12.8852, 0)

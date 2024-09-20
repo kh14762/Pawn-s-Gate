@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://deknhw1yh4ssx"]
+
+[ext_resource type="PackedScene" uid="uid://ccbad3dnhr5dm" path="res://assets/Printer.blend" id="1_ejfcw"]
+
+[node name="Printer" instance=ExtResource("1_ejfcw")]

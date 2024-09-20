@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnf3umkp5fa5q"]
+
+[ext_resource type="Script" path="res://src/board/Board.cs" id="1_o6h7y"]
+[ext_resource type="PackedScene" uid="uid://d3ffgvrnph5ki" path="res://scenes/board/Cell.tscn" id="2_584xv"]
+
+[node name="Board" type="Node3D"]
+script = ExtResource("1_o6h7y")
+_width = 8
+_height = 8
+
+[node name="Cell" parent="." instance=ExtResource("2_584xv")]
